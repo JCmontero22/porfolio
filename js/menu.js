@@ -1,0 +1,1 @@
+const hamburguer = document.querySelector('.iconoMenu')
