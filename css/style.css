@@ -19,8 +19,10 @@ html {
 }
 
 body{
-   font-size: 1.6rem;
+    font-family: "Parkinsans", sans-serif;
+    font-size: 1.6rem;
     height: 100%;
+
 }
 
 .contenedor{
@@ -35,7 +37,7 @@ body{
     height: 100vh;
     /* background-image: linear-gradient(45deg, rgba(147, 165, 207, 0.301) 0%, rgba(228, 239, 233, 0.308) 100%),url(../img/head.jpg); */
 
-    background-image: linear-gradient(to top, #ebbda77c 0%, #cfc7f867 100%),url(../img/head.jpg);
+    background-image: linear-gradient(to top, #ebbda759 0%, #557c93d5 100%),url(../img/banner1.2.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -50,6 +52,10 @@ body{
     justify-content: center;
     flex-direction: column;
     color: #ffffff;
+}
+
+.logo-codigo{
+    width: 120px;
 }
 
 .iconoMenu{
@@ -94,7 +100,7 @@ body{
 }
 
 .copy{
-    font-weight: 300;
+    font-weight: 600;
     font-size: 25px;
 }
 /* header:hover .menuNavegacion{
@@ -307,6 +313,10 @@ footer{
         width: 50vw;
     }
 
+    .logo-codigo{
+        width: 80px;
+    }
+
     .titulo{
         font-size: 40px;
     }
@@ -362,6 +372,10 @@ footer{
 @media screen and (max-width: 500px){
     .menuNavegacion{
         width: 65vw;
+    }
+
+    .logo-codigo{
+        width: 50px;
     }
 
     .iconoMenu{
