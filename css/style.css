@@ -19,8 +19,8 @@ html {
 }
 
 body{
-    font-family: "Parkinsans", sans-serif;
-    font-size: 1.6rem;
+    font-family: "Parkinsans", sans-serif !important;
+    font-size: 1.6rem !important;
     height: 100%;
 
 }
@@ -67,6 +67,7 @@ body{
     height: 40px;
     border-radius: 10px;
     box-shadow: 0 0 6px rgb(0, 0, 0, .5);    
+    z-index: 999;
 }
 
 .menuNavegacion{
@@ -83,6 +84,7 @@ body{
     transition: transform .3s ease-in-out;
     transform: translate(110%);
     box-shadow: 0 0 6px rgb(0, 0, 0, .5);
+    z-index: 999;
 }
 
 .spread{
@@ -113,6 +115,11 @@ body{
     font-weight: 300;
     color: #9f8ad0;
     margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.subtitulos{
+    margin-bottom: 30px;
     font-size: 40px;
 }
 
@@ -157,70 +164,77 @@ body{
     margin-right: 5px;
 }
 
-.gallery{
+.skill{
+    /* background: #f2f2f2; */
+}
+
+.skills-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.skills-content .card{
+    flex: 1 1 calc(20% - 20px) ;
+    /* max-width: calc(25% - 10px) ; */
+}
+
+.card{
+    padding: 10px;
+}
+
+.card-title{
+    font-size: 2rem;
+}
+
+.card-text{
+    font-size: 1.3rem;
+}
+
+.logoSkills{
+    margin: 0 auto;
+    width: 100px;
+    height: 120px;
+}
+
+.experiencia{
     background: #f2f2f2;
 }
 
-.contenedorGaleria{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.imgGallery{
-    object-fit: cover;
-    width: 30%;
-    display: block;
-    margin-bottom: 15px;
-    box-shadow: 0 0 6px rgb(0, 0, 0, .5);
-    cursor: pointer;
-}
-
-.imagenLight{
-    position: fixed;
-    background: rgb(0, 0, 0, .6);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(100%);
-    transition: transform .2s ease-in-out;
-}
-
-.show{
-    transform: translate(0);
-}
-
-.agregaImagen{
-    object-fit: cover;
-    width: 50%;
-    border-radius: 10px;
-    transform: scale(0);
-    transition: transform .3s .2s;
-}
-
-
-
-.showImagen{
-    transform: scale(1); 
-}
-
-.close{
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 40px;
-    cursor: pointer;
-}
-
-.experts{
+.experiencia-content{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    gap: 20px;
+}
+
+.experiencia-content .card{
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+}
+
+.experiencia-content p{
+    margin: 0;
+}
+
+.logoExperiencia{
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.logoExperienciaUniversidad{
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.logoExperienciaDacartec{
+    max-width: 150px;
+    max-height: 80px;
+    margin: 0 auto;
 }
 
 .contentExperts{
@@ -308,6 +322,61 @@ footer{
     margin-bottom: 60px;
 }
 
+.contenedorGaleria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imgGallery{
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgb(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.imagenLight{
+    position: fixed;
+    background: rgb(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.show{
+    transform: translate(0);
+}
+
+.agregaImagen{
+    object-fit: cover;
+    width: 50%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+
+
+.showImagen{
+    transform: scale(1); 
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 800px){
     .menuNavegacion{
         width: 50vw;
@@ -367,6 +436,8 @@ footer{
         width: 80%;
         margin-bottom: 40px;
     }
+
+    
 }
 
 @media screen and (max-width: 500px){
@@ -409,4 +480,40 @@ footer{
     }
 
     
+}
+
+@media screen and (max-width: 1224px){
+    .card-text{
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Media Queries para ajustar en dispositivos más pequeños */
+@media (max-width: 1200px) {
+    .skills-content .card {
+        flex: 1 1 calc(25% - 20px); /* 4 tarjetas por fila */
+        max-width: calc(25% - 20px);
+    }
+}
+
+@media (max-width: 992px) {
+    .skills-content .card {
+        flex: 1 1 calc(33.33% - 20px); /* 3 tarjetas por fila */
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-content .card {
+        flex: 1 1 calc(50% - 20px); /* 2 tarjetas por fila */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .skills-content .card {
+        flex: 1 1 calc(50% - 20px); /* 1 tarjeta por fila */
+        max-width: calc(50% - 20px);
+    }
 }

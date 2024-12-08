@@ -1,76 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/style.css">
-        <title>Pagina JMontero</title>
-    </head>
-    <body>
-     
-        <header class="header" id="inicio">
-            <img src="img/icon_menu.svg" alt="" class="iconoMenu">
-            <nav class="menuNavegacion">
-                <a href="#inicio">Inicio</a>
-                <a href="#acercade">Sobre mí</a>
-                <a href="#portafolio">Portafolio</a>
-                <a href="#expertos">Expertos</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
 
-            <div class="contenedor head">
-                <img src="./img//logoCodigo.png" alt="" class="logo-codigo">
-                <h1 class="titulo">Johan Montero</h1>
-                <p class="copy">Desarrollador Web Full Stack</p>
-            </div>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 
-        <main>
-            <!-- Acerca de -->
-            <section class="services contenedor" id="acercade">
-                <h2 class="subtitulos">Sobre mí</h2>
-                <div class="contenedorServicio">
-                    <img src="./img/Web_Development.png" alt="">
-                    <div class="checkListServices">
-                        <div class="services">
-                            <p>
-                                Soy Johan Camilo Montero, un ingeniero de sistemas apasionado por la programación, la tecnología y los videojuegos. Soy una persona a la cual le encantan los retos y aprender sobre nuevas tecnologías. Busco día a día crecer tanto profesional como personalmente. Me encanta y me enorgullece lo que hago, siempre buscando mejorar y hacer las cosas cada vez mejor. 
-                            </p>
-                            <br>
-                            <p> 
-                                Uno de mis logros más grandes es haber participado en la migración del sistema de gestión documental de la Universidad Surcolombiana, así como dar soporte al sistema de gestión documental Orfeo del Ejército Nacional. Además, disfruto mucho de hacer cursos para aprender cosas nuevas, investigar sobre cómo puedo hacer las cosas de mejor manera, leer sobre diferentes temas, jugar videojuegos y practicar deportes como fútbol y voleibol. 
-                            </p>
-                        </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-                        <div class="services">
-                            <h3 class="n-services"><span class="number">1</span> Ingeniero de sistemas</h3>
-                            <p>
-                                Soy un Ingeniero de Sistemas egresado de la Universidad Corhuila en 2018, apasionado por la tecnología y la innovación.
-                            </p>
-                        </div>
-                        
-                        <div class="services">
-                            <h3 class="n-services"><span class="number">2</span> Desarrollo web:</h3>
-                            <p>Desarrollador web con mas de 5 años de experiensia tabajando para empresas importantes de la capital del huila, multinacional y para empresas que brindan servicio al el estado. </p>
-                        </div>
-                        
-                        <!-- <div class="services">
-                            <h3 class="n-services"><span class="number">3</span>Desarrollo web</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ad molestias soluta! Nulla beatae, quod repudiandae tenetur sapiente sint ullam.</p>
-                        </div> -->
-                        
+    <title>Pagina JMontero</title>
+</head>
+
+<body>
+
+    <header class="header" id="inicio">
+        <img src="img/icon_menu.svg" alt="" class="iconoMenu">
+        <nav class="menuNavegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#acercade">Sobre mí</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#skills">Skills</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="contenedor head">
+            <img src="./img//logoCodigo.png" alt="" class="logo-codigo">
+            <h1 class="titulo">Johan Montero</h1>
+            <p class="copy">Desarrollador Web Full Stack</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Acerca de -->
+        <section class="services contenedor" id="acercade">
+            <h2 class="subtitulos">Sobre mí</h2>
+            <div class="contenedorServicio">
+                <img src="./img/Web_Development.png" alt="">
+                <div class="checkListServices">
+                    <div class="services">
+                        <p>
+                            Soy Johan Camilo Montero, un ingeniero de sistemas apasionado por la programación, la
+                            tecnología y los videojuegos. Soy una persona a la cual le encantan los retos y aprender
+                            sobre nuevas tecnologías. Busco día a día crecer tanto profesional como personalmente. Me
+                            encanta y me enorgullece lo que hago, siempre buscando mejorar y hacer las cosas cada vez
+                            mejor.
+                        </p>
+                        <br>
+                        <p>
+                            Uno de mis logros más grandes es haber participado en la migración del sistema de gestión
+                            documental de la Universidad Surcolombiana, así como dar soporte al sistema de gestión
+                            documental Orfeo del Ejército Nacional. Además, disfruto mucho de hacer cursos para aprender
+                            cosas nuevas, investigar sobre cómo puedo hacer las cosas de mejor manera, leer sobre
+                            diferentes temas, jugar videojuegos y practicar deportes como fútbol y voleibol.
+                        </p>
+                    </div>
+
+                    <div class="services">
+                        <h3 class="n-services"> Ingeniero de sistemas</h3>
+                        <p>
+                            Soy un Ingeniero de Sistemas egresado de la Universidad Corhuila en 2018, apasionado por la
+                            tecnología y la innovación.
+                        </p>
+                    </div>
+
+                    <div class="services">
+                        <h3 class="n-services"> Desarrollo web:</h3>
+                        <p>Desarrollador web con mas de 5 años de experiensia tabajando para empresas importantes de la
+                            capital del huila, multinacional y para empresas que brindan servicio al el estado. </p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- galeria -->
-             <section class="gallery" id="portafolio">
+        <!-- Experiencia -->
+        <section class="experiencia" id="experiencia">
+            <div class="contenedor">
+                <h2 class="subtitulos">Experiencia</h2>
+                <section class="experiencia-content">
+                    <div class="card">
+                        <img src="./img/logoExperiencias/LrbLJpdc_400x400.jpg" class="logoExperiencia" alt="">
+                        <div class="card-body">
+                            <P class="card-text"> <strong>Cargo:</strong> Desarrollador PHP</P>
+                            <P class="card-text"> <strong>Tiempo:</strong> Del 23/06/2021 hasta 31/12/2024</P>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-primary mt-5">Mas detalles</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/logoExperiencias/universidad-surcolombiana-v.png" class="logoExperienciaUniversidad" alt="">
+                        <div class="card-body">
+                            <P class="card-text"> <strong>Cargo:</strong> Desarrollador PHP</P>
+                            <P class="card-text"> <strong>Tiempo:</strong> Del 23/06/2021 hasta 31/12/2024</P>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-primary mt-5">Mas detalles</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/logoExperiencias/dacartec_colombia_logo.jpeg" class="logoExperienciaDacartec" alt="">
+                        <div class="card-body">
+                            <P class="card-text"> <strong>Cargo:</strong> Desarrollador PHP</P>
+                            <P class="card-text"> <strong>Tiempo:</strong> Del 23/06/2021 hasta 31/12/2024</P>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-primary mt-5">Mas detalles</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/logoExperiencias/images.png" class="logoExperienciaDacartec" alt="">
+                        <div class="card-body">
+                            <P class="card-text"> <strong>Cargo:</strong> Desarrollador PHP</P>
+                            <P class="card-text"> <strong>Tiempo:</strong> Del 23/06/2021 hasta 31/12/2024</P>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-primary mt-5">Mas detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- skill -->
+        <section class="skill" id="skills">
+            <div class="contenedor">
+                <h2 class="subtitulos">Skills </h2>
+                <section class="skills-content">
+
+                    <div class="card">
+                        <img src="./img/logoSkills/html.png" class="logoSkills" alt="">
+                        <!-- <div class="card-body">
+                            <h5 class="card-title text-center">HTML</h5>
+                            <p class="card-text text-center">5 años de experiencia</p>
+                        </div> -->
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/logoSkills/css3.png" class="logoSkills" alt="">
+                        <!-- <div class="card-body">
+                            <h5 class="card-title text-center">CSS3</h5>
+                            <p class="card-text text-center">5 años de experiencia</p>
+                        </div> -->
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/logoSkills/bootstrap.png" class="logoSkills" alt="">
+                        <!-- <div class="card-body">
+                            <h5 class="card-title text-center">BOOTSTRAP</h5>
+                            <p class="card-text text-center">5 años de experiencia</p>
+                        </div> -->
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/logoSkills/javascript.png" class="logoSkills" alt="">
+                        <!-- <div class="card-body">
+                            <h5 class="card-title text-center">JAVASCRIPT</h5>
+                            <p class="card-text text-center">5 años de experiencia</p>
+                        </div> -->
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/logoSkills/jquery.png" class="logoSkills" alt="">
+                        <!-- <div class="card-body">
+                            <h5 class="card-title text-center">JQUERY</h5>
+                            <p class="card-text text-center">5 años de experiencia</p>
+                        </div> -->
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/logoSkills/ajax.png" class="logoSkills" alt="">
+                        <!-- <div class="card-body">
+                            <h5 class="card-title text-center">AJAX</h5>
+                            <p class="card-text text-center">5 años de experiencia</p>
+                        </div> -->
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/logoSkills/php.png" class="logoSkills" alt="">
+                        <!-- <div class="card-body">
+                            <h5 class="card-title text-center">PHP</h5>
+                            <p class="card-text text-center">5 años de experiencia</p>
+                        </div> -->
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/logoSkills/angular.png" class="logoSkills" alt="">
+                        <!-- <div class="card-body">
+                            <h5 class="card-title text-center">ANGULAR</h5>
+                            <p class="card-text text-center">2 años de experiencia</p>
+                        </div> -->
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/logoSkills/laravel_2.png" class="logoSkills" alt="">
+                        <!-- <div class="card-body">
+                            <h5 class="card-title text-center">LARAVEL</h5>
+                            <p class="card-text text-center">2 años de experiencia</p>
+                        </div> -->
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/logoSkills/sqlServer.svg" class="logoSkills" alt="">
+                        <!-- <div class="card-body">
+                            <h5 class="card-title text-center">SQL SERVER</h5>
+                            <p class="card-text text-center">3 años de experiencia</p>
+                        </div> -->
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/logoSkills/mysql.png" class="logoSkills" alt="">
+                        <!-- <div class="card-body">
+                            <h5 class="card-title text-center">MYSQL</h5>
+                            <p class="card-text text-center">5 años de experiencia</p>
+                        </div> -->
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/logoSkills/github.png" class="logoSkills" alt="">
+                        <!-- <div class="card-body">
+                            <h5 class="card-title text-center">GITHUB</h5>
+                            <p class="card-text text-center">3 años de experiencia</p>
+                        </div> -->
+                    </div>
+
+
+                    
+
+                    <!--  <div class="contentExperts">
+                        <img src="img/anality.jpg" alt="">
+                        <h3 class="nExpert">Analytics</h3>
+                    </div>
+                
+                    <div class="contentExperts">
+                        <img src="img/ceo.png" alt="">
+                        <h3 class="nExpert">CEO</h3>
+                    </div>
+                
+                    <div class="contentExperts">
+                        <img src="img/security.jpg" alt="">
+                        <h3 class="nExpert">Security</h3>
+                    </div> -->
+
+                </section>
+            </div>
+        </section>
+
+        <!--  -->
+        <!--  <section class="gallery" id="portafolio">
                 <div class="contenedor">
                     <h2 class="subtitulos">Galeria</h2>
                     <div class="contenedorGaleria">
@@ -87,49 +273,34 @@
                 <img src="img/icon_cerrar.svg" alt="" class="close">
                 <img src="" alt="" class="agregaImagen">
              </section>
+ -->
 
-             <!-- Expertos -->
-             <section class="contenedor" id="expertos">
-                <h2 class="subtitulos">Expertos en:</h2>
-                <section class="experts">
-                    <div class="contentExperts">
-                        <img src="img/anality.jpg" alt="">
-                        <h3 class="nExpert">Analytics</h3>
-                    </div>
+    </main>
 
-                    <div class="contentExperts">
-                        <img src="img/ceo.png" alt="">
-                        <h3 class="nExpert">CEO</h3>
-                    </div>
-
-                    <div class="contentExperts">
-                        <img src="img/security.jpg" alt="">
-                        <h3 class="nExpert">Security</h3>
-                    </div>
-
-                </section>
-             </section>
-        </main>
-
-        <footer id="contacto">
-            <div class="contenedor footerContent">
-                <div class="contactUs">
-                    <h2 class="brand">JMontero Developer</h2>
-                    <p>Desarrollador web Full Stack</p>
-                </div>
-                <div class="solcialMedia">
-                    <a href="./" class="socialMediaIcon">
-                        <i class='bx bxl-linkedin-square'></i>            
-                    </a>
-                    <a href="./" class="socialMediaIcon">
-                        <i class='bx bxl-github' ></i>
-                    </a>
-                </div>
+    <footer id="contacto">
+        <div class="contenedor footerContent">
+            <div class="contactUs">
+                <h2 class="brand">JMontero Developer</h2>
+                <p>Desarrollador web Full Stack</p>
             </div>
-            <div class="line"></div>
-        </footer>
+            <div class="solcialMedia">
+                <a href="./" class="socialMediaIcon">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
+                <a href="./" class="socialMediaIcon">
+                    <i class='bx bxl-github'></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
 
-        <script src="./js/menu.js"></script>
-        <script src="./js/lightBox.js"></script>    
-    </body>
+    <script src="./js/menu.js"></script>
+    <script src="./js/lightBox.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+
 </html>
