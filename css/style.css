@@ -196,8 +196,8 @@ body{
 
 .logoSkills{
     margin: 0 auto;
-    width: 100px;
-    height: 120px;
+    width: 80px;
+    height: 100px;
 }
 
 .experiencia{
@@ -222,18 +222,19 @@ body{
 }
 
 .logoExperiencia{
-    max-width: 200px;
+    max-width: 180px;
+    height: 70px;
     margin: 0 auto;
 }
 
 .logoExperienciaUniversidad{
-    max-width: 150px;
+    max-width: 200px;
+    height: 70px;
     margin: 0 auto;
 }
 
 .logoExperienciaDacartec{
-    max-width: 150px;
-    max-height: 80px;
+
     margin: 0 auto;
 }
 
