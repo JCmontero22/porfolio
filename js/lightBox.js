@@ -1,27 +1,42 @@
- const imagenes = document.querySelectorAll('.imgGallery');
- const imagenesLight = document.querySelector('.agregaImagen');
- const contenedorImagen = document.querySelector('.imagenLight');
- const hamburguer2 = document.querySelector('.iconoMenu');
+   const imagenes = document.querySelectorAll('.logoSkills');
+   const imagenesLight = document.querySelector('.agregaImagen');
+   const contenedorImagen = document.querySelector('.imagenLight');
+   const hamburguer2 = document.querySelector('.iconoMenu');
 
- imagenes.forEach(imagen =>{
-    imagen.addEventListener('click', ()=>{
-        aparecerImagen(imagen.getAttribute('src'));
-    })
- })
+   imagenes.forEach(imagen =>{
+      imagen.addEventListener('click', ()=>{
+         aparecerImagen(imagen.getAttribute('src'), imagen.getAttribute('id'));
+      });
+            
+   });
 
 
- contenedorImagen.addEventListener('click', e=>{
-    if (e.target != imagenesLight) {
-        contenedorImagen.classList.toggle('show');
-        imagenesLight.classList.toggle('showImagen');    
-        hamburguer2.style.opacity = '1';
-    }
-    
- });
+   contenedorImagen.addEventListener('click', e=>{
+      if (e.target != imagenesLight) {
+         contenedorImagen.classList.toggle('show');
+         imagenesLight.classList.toggle('showImagen');    
+         hamburguer2.style.opacity = '1';
+      }
+      
+   });
 
- const aparecerImagen = (imagen)=>{
-    imagenesLight.src = imagen;
-    contenedorImagen.classList.toggle('show');
-    imagenesLight.classList.toggle('showImagen');
-    hamburguer2.style.opacity = '0';
- }
+   const aparecerImagen = (imagen, nombre)=>{    
+
+      imagenesLight.src = imagen;
+      contenedorImagen.classList.toggle('show');
+      imagenesLight.classList.toggle('showImagen');
+      hamburguer2.style.opacity = '0';
+
+      if (nombre == 'html' || nombre == 'css' || nombre == 'bootstrap' || nombre == 'javaScript' || nombre == 'jquery' || nombre == 'ajax' || nombre == 'php' || nombre == 'mySql' || nombre == 'poo') {
+         $("#tiempo").html('5 Años');
+      }
+
+      if (nombre == 'angular' || nombre == 'laravel') {
+         $("#tiempo").html('2 Años');
+      }
+
+      if (nombre == 'sqlServe' || nombre == 'gitHub') {
+         $("#tiempo").html('3 Años');
+      }
+
+   }
