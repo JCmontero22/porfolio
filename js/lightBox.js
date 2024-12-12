@@ -15,7 +15,8 @@
       if (e.target != imagenesLight) {
          contenedorImagen.classList.toggle('show');
          imagenesLight.classList.toggle('showImagen');    
-         hamburguer2.style.opacity = '1';
+         /* hamburguer2.style.opacity = '1'; */
+         $("#menuIcono").show();
       }
       
    });
@@ -25,7 +26,7 @@
       imagenesLight.src = imagen;
       contenedorImagen.classList.toggle('show');
       imagenesLight.classList.toggle('showImagen');
-      hamburguer2.style.opacity = '0';
+      $("#menuIcono").hide();
 
       if (nombre == 'html' || nombre == 'css' || nombre == 'bootstrap' || nombre == 'javaScript' || nombre == 'jquery' || nombre == 'ajax' || nombre == 'php' || nombre == 'mySql' || nombre == 'poo') {
          $("#tiempo").html('5 Años');

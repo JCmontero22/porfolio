@@ -22,7 +22,38 @@ body{
     font-family: "Parkinsans", sans-serif !important;
     font-size: 1.6rem !important;
     height: 100%;
+}
 
+.btn{
+    font-size: 1.3rem !important;
+    border-radius: 5px !important;
+}
+
+.tituloHeader{
+    font-size: 8rem;
+}
+
+.titulo{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copy{
+    font-weight: 600;
+    font-size: 35px;
+    
+}
+.cursores{
+    font-size: 3rem;
+    color: black !important;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret { from, to { opacity: 1 } 50% { opacity: 0 } }
+
+.subtitulos{
+    margin-bottom: 30px;
+    font-size: 40px;
 }
 
 .contenedor{
@@ -35,13 +66,12 @@ body{
 
 .header{
     height: 100vh;
-    /* background-image: linear-gradient(45deg, rgba(147, 165, 207, 0.301) 0%, rgba(228, 239, 233, 0.308) 100%),url(../img/head.jpg); */
-
     background-image: linear-gradient(to top, #ebbda759 0%, #557c93d5 100%),url(../img/banner1.2.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    position: relative;
 }
 
 .head{
@@ -52,10 +82,18 @@ body{
     justify-content: center;
     flex-direction: column;
     color: #ffffff;
+    
 }
 
 .logo-codigo{
     width: 120px;
+}
+
+.btnCV{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    font-size: 2rem !important;
 }
 
 .iconoMenu{
@@ -76,7 +114,7 @@ body{
     right: 0px;
     width: 15vw;
     height: 100%;
-    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+    background-image: linear-gradient(to top, #4b3f399c 0%, #557c93fa);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -85,6 +123,8 @@ body{
     transform: translate(110%);
     box-shadow: 0 0 6px rgb(0, 0, 0, .5);
     z-index: 999;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .spread{
@@ -96,116 +136,32 @@ body{
     text-decoration: none;
 }
 
-.titulo{
-    font-size: 60px;
-    margin-bottom: 15px;
-}
-
-.copy{
-    font-weight: 600;
-    font-size: 25px;
-}
-/* header:hover .menuNavegacion{
-    transform: translate(110%);
-
-} */
-
-.subtitutlo{
-    text-align: center;
-    font-weight: 300;
-    color: #9f8ad0;
-    margin-bottom: 40px;
-    font-size: 40px;
-}
-
-.subtitulos{
-    margin-bottom: 30px;
-    font-size: 40px;
-}
-
-.contenedorServicio{
+.contenedor-sobremi{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.contenedorServicio img{
+.contenedor-sobremi img{
     width: 40%;
 }
 
-.checkListServices{
+.sobremi-texto{
     width: 45%;
 }
 
-.services{
+.sobremi{
     margin-bottom: 40px;
 }
 
-.services p{
+.sobremi p{
     text-align: justify;
 }
 
 .n-service{
     margin-bottom: 7px;
     color: #9f8ad0;
-}
-
-.number{
-    display: inline-block;
-    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
-    width: 30px;
-    height: 30px;
-    color: white;
-    text-align: center;
-    border-radius: 50%;
-    font-weight: 700;
-    line-height: 30px;
-    margin-right: 5px;
-}
-
-.skill{
-    /* background: #f2f2f2; */
-}
-
-.skills-content{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    
-}
-
-.skills-content .card{
-    flex: 1 1 calc(20% - 20px) ;
-    /* max-width: calc(25% - 10px) ; */
-}
-
-.card{
-    padding: 10px;
-}
-
-.card-title{
-    font-size: 2rem;
-}
-
-.card-text{
-    font-size: 1.3rem;
-}
-
-.logoSkills{
-    margin: 0 auto;
-    width: 80px;
-    height: 100px;
-}
-
-.logoSkills:hover{
-    cursor: pointer;
-}
-
-.mvc{
-    width: 200px;
 }
 
 .experiencia{
@@ -217,12 +173,17 @@ body{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
 }
 
 .experiencia-content .card{
     flex: 1 1 calc(25% - 20px);
     max-width: calc(25% - 20px);
+    /* background-image: linear-gradient(to top, #ebbda786 0%, #557c93e5); */
+    background-color: #fcfcfc;
+    padding: 20px 20px;
+    box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
 }
 
 .experiencia-content p{
@@ -266,9 +227,65 @@ body{
     font-weight: 400;
 }
 
+.content-proyectos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btnProyectos{
+    font-size: 2rem !important;
+}
+
+.skill{
+    background: #f2f2f2;
+}
+
+.skills-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.skills-content .card{
+    flex: 1 1 calc(20% - 20px) ;
+    /* max-width: calc(25% - 10px) ; */
+}
+
+.card{
+    padding: 10px;
+}
+
+.card-title{
+    font-size: 2rem;
+}
+
+.card-text{
+    font-size: 1.3rem;
+}
+
+.logoSkills{
+    margin: 0 auto;
+    width: 80px;
+    min-height: 100px;
+    max-height: 100px;
+    
+}
+
+.logoSkills:hover{
+    cursor: pointer;
+}
+
+.mvc{
+    width: 200px;
+}
 
 footer{
-    background: #9f8ad8;
+    background-image: linear-gradient(to top, #ebbda786 0%, #557c93e5);
     padding-bottom: 0.1px;
 }
 
@@ -283,7 +300,8 @@ footer{
 
 .contactUs{
     width: 40%;
-    color: #FFF;
+    /* color: #FFF; */
+    color: black;
 }
 
 .brand{
@@ -366,7 +384,7 @@ footer{
 
 .agregaImagen{
     object-fit: cover;
-    width: 300px;
+    max-width: 280px;
     border-radius: 10px;
     transform: scale(0);
     transition: transform .3s .2s;
@@ -383,8 +401,8 @@ footer{
 
 .close{
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 50px;
+    right: 80px;
     width: 40px;
     cursor: pointer;
 }
@@ -420,16 +438,16 @@ footer{
         font-size: 40px;
     }
 
-    .contenedorServicio img{
+    .contenedor-sobremi img{
         width: 80%;
         margin-bottom: 40px;
     }
 
-    .checkListServices{
+    .sobremi-texto{
         width: 80%;
     }
 
-    .services{
+    .sobremi{
         margin-bottom: 30px;
 
     }
@@ -467,7 +485,26 @@ footer{
         margin-bottom: 40px;
     }
 
+    .tituloHeader{
+        font-size: 3em;
+    }
+
+    .copy{
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .agregaImagen{
+        max-width: 185px;
+    }
     
+
+    .btnCV{
+        position: inherit;
+        margin-top: 100px;
+        font-size: 1.6rem !important;
+    }
+
 }
 
 @media screen and (max-width: 500px){
@@ -511,6 +548,7 @@ footer{
 
     
 }
+
 
 @media screen and (max-width: 1224px){
     .card-text{
@@ -558,3 +596,30 @@ footer{
         
     }
 }
+
+
+.gallerySkill{
+    display: flex;
+    width: 300px;
+    height: 140px;
+}
+
+.gallerySkill img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    
+}
+
+.gallerySkill img:hover{
+    cursor: crosshair;
+    width: 170px;
+    
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+
