@@ -229,9 +229,37 @@ body{
 
 .content-proyectos{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+.tab-pane {
+    margin-top: 20px;
+    display: flex !important; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tab-pane .card .card-title{
+    font-size: 1.8rem;
+}
+
+.tab-pane .card .card-text{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.content-btn-proyectos{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-btn-proyectos i{
+    color: black;
+    font-size: 30px;
 }
 
 .btnProyectos{

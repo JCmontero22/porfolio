@@ -10,13 +10,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="img/logoCodigo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap"
+        rel="stylesheet">
 
 
     <link rel="stylesheet" href="./css/style.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
     <title>JMontero_Dev</title>
 </head>
@@ -36,9 +41,10 @@
         <div class="contenedor head">
             <img src="./img//logoCodigo.png" alt="" class="logo-codigo">
             <h1 class="tituloHeader">JOHAN MONTERO</h1>
-            <p > <span class="copy"> Desarrollador Web Full Stack </span> <span class="cursores">|</span> </p>
-            <a href="./public/files/Hoja de vida Johan Montero.pdf" download="Hoja de vida Johan Montero.pdf" class="btn btn-primary btnCV" target="_blank">Descargar CV</a>
-            
+            <p> <span class="copy"> Desarrollador Web Full Stack </span> <span class="cursores">|</span> </p>
+            <a href="./public/files/Hoja de vida Johan Montero.pdf" download="Hoja de vida Johan Montero.pdf"
+                class="btn btn-primary btnCV" target="_blank">Descargar CV</a>
+
         </div>
     </header>
 
@@ -96,7 +102,8 @@
                             <P class="card-text"> <strong>Cargo:</strong> Desarrollador PHP</P>
                             <P class="card-text"> <strong>Tiempo:</strong> Del 26/08/2024 hasta la fecha</P>
                             <div class="d-flex justify-content-center">
-                                <button type="button" class="btn btn-primary mt-5" data-bs-toggle="modal" data-bs-target="#modalCgh">Mas detalles</button>
+                                <button type="button" class="btn btn-primary mt-5" data-bs-toggle="modal"
+                                    data-bs-target="#modalCgh">Mas detalles</button>
                             </div>
                         </div>
                     </div>
@@ -107,7 +114,8 @@
                             <P class="card-text"> <strong>Cargo:</strong> Desarrollador PHP</P>
                             <P class="card-text"> <strong>Tiempo:</strong> Del 10/04/2023 hasta la fecha</P>
                             <div class="d-flex justify-content-center">
-                                <button type="button" class="btn btn-primary mt-5" data-bs-toggle="modal" data-bs-target="#modalDacartec">Mas detalles</button>
+                                <button type="button" class="btn btn-primary mt-5" data-bs-toggle="modal"
+                                    data-bs-target="#modalDacartec">Mas detalles</button>
                             </div>
                         </div>
                     </div>
@@ -119,7 +127,8 @@
                             <P class="card-text"> <strong>Cargo:</strong> Desarrollador PHP</P>
                             <P class="card-text"> <strong>Tiempo:</strong> Del 23/09/2021 hasta 15/10/2024</P>
                             <div class="d-flex justify-content-center">
-                                <button type="button" class="btn btn-primary mt-5" data-bs-toggle="modal" data-bs-target="#modalUsco">Mas detalles</button>
+                                <button type="button" class="btn btn-primary mt-5" data-bs-toggle="modal"
+                                    data-bs-target="#modalUsco">Mas detalles</button>
                             </div>
                         </div>
                     </div>
@@ -130,7 +139,8 @@
                             <P class="card-text"> <strong>Cargo:</strong> Desarrollador PHP</P>
                             <P class="card-text"> <strong>Tiempo:</strong> Del 23/06/2021 hasta 31/12/2022</P>
                             <div class="d-flex justify-content-center">
-                                <button type="button" class="btn btn-primary mt-5" data-bs-toggle="modal" data-bs-target="#modalComfamiliar">Mas detalles</button>
+                                <button type="button" class="btn btn-primary mt-5" data-bs-toggle="modal"
+                                    data-bs-target="#modalComfamiliar">Mas detalles</button>
                             </div>
                         </div>
                     </div>
@@ -142,8 +152,126 @@
         <section class="proyectos">
             <div class="contenedor">
                 <h2 class="subtitulos">Proyectos personales</h2>
-                <div class=" content-proyectos">
-                    
+                <div class="content-proyectos">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                                type="button" role="tab" aria-controls="home" aria-selected="true">Proyectos
+                                basicos</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="card" style="width: 28rem;">
+                                <!-- <img src="..." class="card-img-top"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Api Basica Laravel (Usuarios)</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    <div class="content-btn-proyectos">
+                                        <a href="https://github.com/JCmontero22/API_BASICA_LARAVEL_USUARIOS" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Github" > <i class="fab fa-github"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Link del proyecto"> <i class="fas fa-link"></i></a>
+                                    </div>
+                                </div>
+                               <!--  <div class="card-footer">
+                                    <button class="btn btn-primary">prueba</button>
+                                    <button class="btn btn-primary">prueba</button>
+                                </div> -->
+                            </div>
+                            <div class="card" style="width: 28rem;">
+                                <!-- <img src="..." class="card-img-top"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Card </h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                               <!--  <div class="card-footer">
+                                    <button class="btn btn-primary">prueba</button>
+                                    <button class="btn btn-primary">prueba</button>
+                                </div> -->
+                            </div>
+                            <div class="card" style="width: 28rem;">
+                                <!-- <img src="..." class="card-img-top"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title"> title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                               <!--  <div class="card-footer">
+                                    <button class="btn btn-primary">prueba</button>
+                                    <button class="btn btn-primary">prueba</button>
+                                </div> -->
+                            </div>
+                            <div class="card" style="width: 28rem;">
+                                <!-- <img src="..." class="card-img-top"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                               <!--  <div class="card-footer">
+                                    <button class="btn btn-primary">prueba</button>
+                                    <button class="btn btn-primary">prueba</button>
+                                </div> -->
+                            </div>
+
+                            <div class="card" style="width: 28rem;">
+                                <!-- <img src="..." class="card-img-top"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Api Basica Laravel Usuarios</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                               <!--  <div class="card-footer">
+                                    <button class="btn btn-primary">prueba</button>
+                                    <button class="btn btn-primary">prueba</button>
+                                </div> -->
+                            </div>
+                            <div class="card" style="width: 28rem;">
+                                <!-- <img src="..." class="card-img-top"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Card </h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-primary">prueba</button>
+                                    <button class="btn btn-primary">prueba</button>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 28rem;">
+                                <!-- <img src="..." class="card-img-top"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title"> title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-primary">prueba</button>
+                                    <button class="btn btn-primary">prueba</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -219,9 +347,9 @@
 
             </div>
         </section>
-        
 
-       <!-- <div class="contenedor">
+
+        <!-- <div class="contenedor">
          <section class="gallerySkill">
              <img src="./img/logoSkills/html.png" alt="">
              <img src="./img/logoSkills/css3.png" alt="">
@@ -232,7 +360,7 @@
        </div> -->
 
         <!--  -->
-         <!-- <section class="gallery" id="portafolio">
+        <!-- <section class="gallery" id="portafolio">
                 <div class="contenedor">
                     <h2 class="subtitulos">Galeria</h2>
                     <div class="contenedorGaleria">
@@ -288,12 +416,16 @@
                 <div class="modal-body">
                     <h4>Tareas Realizadas:</h4>
                     <p class="textoModal">
-                        Desarrollar software, especificar requerimientos, realizar pruebas, capacitar a los usuarios y poner en servicio los requerimientos y solicitudes, referentes a la aplicación sigas de Comfamiliar del Huila.
+                        Desarrollar software, especificar requerimientos, realizar pruebas, capacitar a los usuarios y
+                        poner en servicio los requerimientos y solicitudes, referentes a la aplicación sigas de
+                        Comfamiliar del Huila.
                     </p>
 
                     <h4>Tecnologias Utilizadas:</h4>
                     <p class="textoModal">
-                        PHP puro orientados a objetos, arquitecturas modelo vista controlador, AJAX, JavaScrip, librería jQuery, datos JSON, HTML5, CSS3, Bootstrap, bases de datos relacionales SQL SERVER, GIT, Bitbucket, Jira, metodología Scrum.
+                        PHP puro orientados a objetos, arquitecturas modelo vista controlador, AJAX, JavaScrip, librería
+                        jQuery, datos JSON, HTML5, CSS3, Bootstrap, bases de datos relacionales SQL SERVER, GIT,
+                        Bitbucket, Jira, metodología Scrum.
                     </p>
                 </div>
                 <div class="modal-footer">
@@ -316,7 +448,8 @@
                 <div class="modal-body">
                     <h4>Tareas Realizadas:</h4>
                     <p class="textoModal">
-                        Análisis, diseño, desarrollo, manejo de base de datos, soporte y actualización del sistema de gestión documental. 
+                        Análisis, diseño, desarrollo, manejo de base de datos, soporte y actualización del sistema de
+                        gestión documental.
                     </p>
                     <p class="textoModal">
                         Actualización a nuevas tecnologías del sistema de gestión documental de la universidad.
@@ -324,11 +457,15 @@
 
                     <h4>Tecnologias Utilizadas:</h4>
                     <p class="textoModal">
-                        Para el soporte del sistema de gestión documental antiguo: PHP 5 puro orientados a objetos, arquitecturas modelo vista controlador, AJAX, JavaScrip, AngularJs, librería jQuery, datos JSON HTML5, CSS3, Bootstrap, bases de datos relacionales SQL SERVER, GIT, GitHub.
+                        Para el soporte del sistema de gestión documental antiguo: PHP 5 puro orientados a objetos,
+                        arquitecturas modelo vista controlador, AJAX, JavaScrip, AngularJs, librería jQuery, datos JSON
+                        HTML5, CSS3, Bootstrap, bases de datos relacionales SQL SERVER, GIT, GitHub.
                     </p>
 
                     <p class="textoModal">
-                        Para la migracion del sistema: Angular Cli 16 para la parte del Front End, Laravel 8 para la parte del Back End como api, HTML5, CSS3, Bootstrap, bases de datos relacionales SQL SERVER, GIT, GitHub.
+                        Para la migracion del sistema: Angular Cli 16 para la parte del Front End, Laravel 8 para la
+                        parte del Back End como api, HTML5, CSS3, Bootstrap, bases de datos relacionales SQL SERVER,
+                        GIT, GitHub.
                     </p>
                 </div>
                 <div class="modal-footer">
@@ -353,11 +490,12 @@
                     <p class="textoModal">
                         Migración del proyecto Orion Lab 1 a nuevas tecnologías, análisis, diseño y lógica de proyecto.
                     </p>
-                    
+
                     <h4>Tecnologias Utilizadas:</h4>
                     <p class="textoModal">
                         PHP 8.2 puro, orientados a objetos,
-                        arquitecturas modelo vista controlador, API REST, AJAX, JavaScrip, librería JQuery, datos JSON HTML5, CSS3, Bootstrap, bases de datos relacionales MySql,
+                        arquitecturas modelo vista controlador, API REST, AJAX, JavaScrip, librería JQuery, datos JSON
+                        HTML5, CSS3, Bootstrap, bases de datos relacionales MySql,
                         Sourcetree, metodología scrum.
                     </p>
                 </div>
@@ -383,7 +521,7 @@
                     <p class="textoModal">
                         Soporte y mantenimiento al sistema de gestión documental Orfeo del ejército nacional.
                     </p>
-                    
+
                     <h4>Tecnologias Utilizadas:</h4>
                     <p class="textoModal">
                         PHP 5.3 puro, AJAX, JavaScrip, librería JQuery, datos JSON HTML5, CSS3, Oracle, servidor linux
@@ -409,7 +547,8 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 </body>
 
