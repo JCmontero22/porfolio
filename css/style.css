@@ -207,25 +207,8 @@ body{
     margin: 0 auto;
 }
 
-.contentExperts{
-    width: 30%;
-    text-align: center;
-    margin-bottom: 20px;
-}
 
-.contentExperts img{
-    max-width: 100%;
-    display: block;
-    height: 300px;
-    margin: 0 auto;
-}
-
-.nExpert{
-    display: inline-block;
-    margin-top: 20px;
-    width: 100%;
-    font-weight: 400;
-}
+/*************** PROYECTOS ***************/
 
 .content-proyectos{
     display: flex;
@@ -273,6 +256,32 @@ body{
 .btnProyectos{
     font-size: 2rem !important;
 }
+
+.content-tecnologias-usadas{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tegnologia{
+    background-color: #b6a9a9;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.tegnologia p{
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.2rem;
+}
+
+.tegnologia i{
+    font-size: 15px;
+    color: red;
+    vertical-align: middle;
+}
+
+
+/*************** SKILLS ***************/
 
 .skill{
     background: #f2f2f2;
