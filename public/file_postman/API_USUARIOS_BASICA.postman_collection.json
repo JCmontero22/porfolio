@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "d99abe95-fd9c-444d-97ca-7e9fbe5a87dc",
+		"name": "API_USUARIOS_BASICA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "16540908",
+		"_collection_link": "https://restless-station-836319.postman.co/workspace/Proyecto_Administracion_Canchas~4ffba8fd-775d-4637-b79b-b3fc9a82cef7/collection/16540908-d99abe95-fd9c-444d-97ca-7e9fbe5a87dc?action=share&source=collection_link&creator=16540908"
+	},
+	"item": [
+		{
+			"name": "GET_ONE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://apilaravelusuarios.jcmonterodev.pw/api/usuarios/1"
+			},
+			"response": []
+		},
+		{
+			"name": "GET_ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://apilaravelusuarios.jcmonterodev.pw/api/usuarios"
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre_usuario\": \"Juan Sebastian\",\n    \"apellido_usuario\": \"Rendon\",\n    \"identificacion_usuario\": \"1075278997\",\n    \"telefono_usuario\": \"3144189228\",\n    \"email_usuario\": \"juan@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://apilaravelusuarios.jcmonterodev.pw/api/usuarios"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "https://apilaravelusuarios.jcmonterodev.pw/api/usuarios/2"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://apilaravelusuarios.jcmonterodev.pw/api/usuarios/2"
+			},
+			"response": []
+		}
+	]
+}

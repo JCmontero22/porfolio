@@ -34,6 +34,7 @@
             <a href="#inicio">Inicio</a>
             <a href="#acercade">Sobre mí</a>
             <a href="#experiencia">Experiencia</a>
+            <a href="#proyectos">Proyectos</a>
             <a href="#skills">Skills</a>
             <a href="#contacto">Contacto</a>
         </nav>
@@ -149,44 +150,60 @@
         </section>
 
         <!--*************** Proyectos personales ***************-->
-        <section class="proyectos">
+        <section class="proyectos" id="proyectos">
             <div class="contenedor">
+
+                <!--*************** PROYECTOS PERSONALES ***************-->
+
                 <h2 class="subtitulos">Proyectos personales</h2>
+
                 <div class="content-proyectos">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                                type="button" role="tab" aria-controls="home" aria-selected="true">Proyectos
-                                basicos</button>
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Proyectosbasicos</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                                type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
-                                type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
                         </li>
                     </ul>
+
+                    
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                            <!-- Proyecto1 -->
                             <div class="card" style="width: 28rem;">
-                                <!-- <img src="..." class="card-img-top"> -->
                                 <div class="card-body">
                                     <h5 class="card-title">Api Basica Laravel (Usuarios)</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the card's content.</p>
-                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    <div class="tecnologiaUsadas">
+                                        <i class="fab fa-laravel fa-m fa-fw" style="color: red;"></i>
+                                        <i class="fas fa-database fa-sm fa-fw" style="color: red;"></i>
+                                    </div>
+                                    <div class="card-text mt-4">
+                                        <p>API para la gestión de usuarios utilizando Laravel 10 y MySQL, que permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar).</p>
+                                        
+                                        <!-- <div class="collapse" id="collapseExample">
+                                            <p> 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ad tenetur fuga recusandae aut est repudiandae suscipit nobis reprehenderit laboriosam ullam voluptate enim praesentium, molestias deserunt obcaecati quis laborum id. 
+                                            </p>
+                                        </div> -->
+                                        <!-- <a class="d-flex justify-content-end" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Ver mas</a> -->
+                                    </div>
+
+                                    
+
+                                    
                                     <div class="content-btn-proyectos">
                                         <a href="https://github.com/JCmontero22/API_BASICA_LARAVEL_USUARIOS" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Github" > <i class="fab fa-github"></i></a>
-                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Link del proyecto"> <i class="fas fa-link"></i></a>
+                                        <a href="https://apilaravelusuarios.jcmonterodev.pw/api/usuarios" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Link del proyecto"> <i class="fas fa-link"></i></a>
+                                        <a href="./public/file_postman/API_USUARIOS_BASICA.postman_collection.json" download="API_USUARIOS_BASICA.postman_collection.json" target="_blank"> <img src="img/iconos/iconPostman.png" alt="" width="30px"data-bs-toggle="tooltip" data-bs-placement="top" title="Coleccion Postman"> </a>
                                     </div>
                                 </div>
-                               <!--  <div class="card-footer">
-                                    <button class="btn btn-primary">prueba</button>
-                                    <button class="btn btn-primary">prueba</button>
-                                </div> -->
                             </div>
+                            
                             <div class="card" style="width: 28rem;">
                                 <!-- <img src="..." class="card-img-top"> -->
                                 <div class="card-body">
@@ -195,11 +212,8 @@
                                         the bulk of the card's content.</p>
                                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                                 </div>
-                               <!--  <div class="card-footer">
-                                    <button class="btn btn-primary">prueba</button>
-                                    <button class="btn btn-primary">prueba</button>
-                                </div> -->
                             </div>
+                            
                             <div class="card" style="width: 28rem;">
                                 <!-- <img src="..." class="card-img-top"> -->
                                 <div class="card-body">
@@ -208,11 +222,8 @@
                                         the bulk of the card's content.</p>
                                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                                 </div>
-                               <!--  <div class="card-footer">
-                                    <button class="btn btn-primary">prueba</button>
-                                    <button class="btn btn-primary">prueba</button>
-                                </div> -->
                             </div>
+                            
                             <div class="card" style="width: 28rem;">
                                 <!-- <img src="..." class="card-img-top"> -->
                                 <div class="card-body">
@@ -221,11 +232,8 @@
                                         the bulk of the card's content.</p>
                                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                                 </div>
-                               <!--  <div class="card-footer">
-                                    <button class="btn btn-primary">prueba</button>
-                                    <button class="btn btn-primary">prueba</button>
-                                </div> -->
                             </div>
+
 
                             <div class="card" style="width: 28rem;">
                                 <!-- <img src="..." class="card-img-top"> -->
@@ -235,11 +243,8 @@
                                         the bulk of the card's content.</p>
                                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                                 </div>
-                               <!--  <div class="card-footer">
-                                    <button class="btn btn-primary">prueba</button>
-                                    <button class="btn btn-primary">prueba</button>
-                                </div> -->
                             </div>
+                            
                             <div class="card" style="width: 28rem;">
                                 <!-- <img src="..." class="card-img-top"> -->
                                 <div class="card-body">
