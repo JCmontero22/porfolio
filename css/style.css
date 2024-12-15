@@ -220,9 +220,13 @@ body{
 .tab-pane {
     margin-top: 20px;
     display: flex !important; 
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+.tab-pane .card{
+    box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .tab-pane .card .card-title{
